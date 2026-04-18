@@ -1,5 +1,11 @@
 //* LocalStore
 const signupUsers = JSON.parse(localStorage.getItem('users')) || []
+const isLogin = JSON.parse(localStorage.getItem('isLogin')) || false
+
+
+if (isLogin) {
+  window.location.href = '../../home.html'
+}
 
 //* popup
 const alertModel = (type = 'alert-success', text) => {
@@ -8,8 +14,10 @@ const alertModel = (type = 'alert-success', text) => {
   alert.classList.add(type, 'alert-popup')
   alert.innerHTML = text
 
+  console.log(alert)
+
   setTimeout(() => {
-    alert.classList.remove('alert-popup')
+    alert.classList.remove('alert-popup',type)
   }, 2000);
 
 }
@@ -78,6 +86,8 @@ const signinAccount = (e) => {
 
 
   alertModel("alert-success", "✅ Signin Successful")
+  localStorage.setItem('isLogin',JSON.stringify(true))
+  window.location.href = '../../home.html'
 
   clearFields()
 

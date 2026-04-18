@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpHub AI — Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+<body>
+
+<!-- Dark mode toggle (CSS-only checkbox hack) -->
+<input type="checkbox" id="dark-toggle" />
+
+<div class="site-shell">
+
+  <!-- Dark mode label (placed inside site-shell so CSS sibling selector works) -->
+  <label class="dark-label" for="dark-toggle" aria-label="Toggle dark mode">
+    <span></span>
+  </label>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="nav">
+      <a class="brand" href="/">
+        <span class="brand-badge">H</span>
+        <span>HelpHub AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="active" href="/">Home</a>
+        <a href="./explore.html">Explore</a>
+        <a href="./leaderboard.html">Leaderboard</a>
+        <a href="./ai-center.html">AI Center</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="pill" href="#">Live community signals</a>
+        <a class="btn btn-primary" href="#">Join the platform</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy fade-in">
+          <span class="eyebrow">SMIT Grand Coding Night 2026</span>
+          <h1>Find help faster. Become help that matters.</h1>
+          <p>HelpHub AI is a community-powered support network for students, mentors, creators, and builders. Ask for help, offer help, track impact, and let AI surface smarter matches across the platform.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/dashboard">Open product demo</a>
+            <a class="btn btn-secondary" href="/create-request">Post a request</a>
+          </div>
+          <div class="stats-grid" aria-label="Platform statistics">
+            <div class="stat-card">
+              <span class="eyebrow">Members</span>
+              <div class="stat-value">4,280</div>
+              <p>Students, mentors, and helpers in the loop.</p>
+            </div>
+            <div class="stat-card">
+              <span class="eyebrow">Requests</span>
+              <div class="stat-value">11,940</div>
+              <p>Support posts shared across learning journeys.</p>
+            </div>
+            <div class="stat-card">
+              <span class="eyebrow">Solved</span>
+              <div class="stat-value">8,720</div>
+              <p>Problems resolved through fast community action.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel fade-in" aria-label="Platform highlights">
+          <span class="orb" aria-hidden="true"></span>
+          <span class="eyebrow">Live product feel</span>
+          <h2>More than a form. More like an ecosystem.</h2>
+          <p>A polished multi-page experience with AI summaries, trust scores, contribution signals, notifications, and leaderboard momentum built in.</p>
+          <div class="stack">
+            <div class="feature-card">
+              <h3>AI request intelligence</h3>
+              <p>Auto-categorization, urgency detection, tags, rewrite suggestions, and trend snapshots.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Community trust graph</h3>
+              <p>Badges, helper rankings, trust score boosts, and visible contribution history.</p>
+            </div>
+            <div class="feature-card">
+              <div class="top-score-value">96%</div>
+              <p>Top trust score currently active across the sample mentor network.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Core flow -->
+    <section class="section" aria-label="Core flow">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Core flow</span>
+            <h2>From struggling alone to solving together</h2>
+          </div>
+          <a class="btn btn-secondary" href="/onboarding">Try onboarding AI</a>
+        </div>
+        <div class="card-grid" id="solving-problem-container">
+          <!-- <article class="feature-card-light fade-in">
+            <h3>Ask for help clearly</h3>
+            <p>Create structured requests with category, urgency, AI suggestions, and tags that attract the right people.</p>
+          </article>
+          <article class="feature-card-light fade-in">
+            <h3>Discover the right people</h3>
+            <p>Use the explore feed, helper lists, notifications, and messaging to move quickly once a match happens.</p>
+          </article>
+          <article class="feature-card-light fade-in">
+            <h3>Track real contribution</h3>
+            <p>Trust scores, badges, solved requests, and rankings help the community recognize meaningful support.</p>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured requests -->
+    <section class="section" aria-label="Featured requests">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Featured requests</span>
+            <h2>Community problems currently in motion</h2>
+          </div>
+          <a class="btn btn-secondary" href="./explore.html">View full feed</a>
+        </div>
+        <div class="card-grid" id="community-problems-container">
+          <!-- <article class="request-card fade-in">
+            <span class="tag urgent">Urgent</span>
+            <h3>Need help debugging React hook</h3>
+            <p>useEffect is firing infinitely despite the correct deps array — community rescue needed.</p>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Hooks</span>
+            </div>
+          </article>
+          <article class="request-card fade-in">
+            <span class="tag">Design</span>
+            <h3>Figma component library review</h3>
+            <p>Looking for a mentor to review my auto-layout and variant patterns before handoff.</p>
+            <div class="tag-row">
+              <span class="tag">Figma</span>
+              <span class="tag">UI Design</span>
+            </div>
+          </article>
+          <article class="request-card fade-in">
+            <span class="tag success">Solved</span>
+            <h3>Python data pipeline optimization</h3>
+            <p>Reduced a 40-minute batch job to under 4 minutes with community help.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      HelpHub AI built By Fuzail Selat.
+    </div>
+  </footer>
+
+</div>
+
+<script src="./assets/js/home.js"></script>
+</body>
+</html>

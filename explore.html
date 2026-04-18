@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpHub AI | Explore Requests</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/explore.css">
+</head>
+<body>
+
+<input type="checkbox" id="dark-toggle" />
+
+<div class="site-shell">
+
+  <label class="dark-label" for="dark-toggle" aria-label="Toggle dark mode">
+    <span></span>
+  </label>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="nav">
+      <a class="brand" href="/">
+        <span class="brand-badge">H</span>
+        <span>HelpHub AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="active" href="./explore.html">Explore</a>
+        <a href="/leaderboard.html">Leaderboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Page hero -->
+    <section class="page-hero" aria-label="Page header">
+      <div class="panel fade-in">
+        <span class="eyebrow" style="color:rgba(255,255,255,.5)">Explore / Feed</span>
+        <h1>Browse help requests with filterable community context.</h1>
+        <p>Filter by category, urgency, skills, and location to surface the best matches.</p>
+      </div>
+    </section>
+
+    <!-- Feed grid -->
+    <section class="feed-grid" aria-label="Explore feed">
+
+      <!-- Filter sidebar -->
+      <aside class="filter-panel" aria-label="Filters">
+        <div>
+          <span class="section-kicker">Filters</span>
+          <h2>Refine the feed</h2>
+        </div>
+
+        <div class="field">
+          <label for="filter-category">Category</label>
+          <select id="filter-category" name="category">
+            <option value="">All categories</option>
+            <option>Web Development</option>
+            <option>Design</option>
+            <option>Career</option>
+            <option>Academics</option>
+            <option>Content</option>
+            <option>Community</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="filter-urgency">Urgency</label>
+          <select id="filter-urgency" name="urgency">
+            <option value="">All urgency levels</option>
+            <option>Critical</option>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="filter-skill">Skills</label>
+          <input id="filter-skill" name="skill" type="text" placeholder="React, Figma, Git/GitHub" />
+        </div>
+
+        <div class="field">
+          <label for="filter-location">Location</label>
+          <input id="filter-location" name="location" type="text" placeholder="Karachi, Lahore, Remote" />
+        </div>
+
+        <a class="btn btn-primary" href="#">Apply filters</a>
+        <a class="btn btn-secondary" href="#">Reset</a>
+      </aside>
+
+      <!-- Results -->
+      <div class="results-stack" aria-label="Request results">
+
+        <article class="request-card fade-in">
+          <span class="tag urgent">Critical</span>
+          <h3>Need help debugging a React useEffect loop</h3>
+          <p>My component is re-rendering infinitely. I've checked the deps array but can't find the issue. Need a senior React dev to pair on this asap.</p>
+          <div class="tag-row">
+            <span class="tag">React</span>
+            <span class="tag">Hooks</span>
+            <span class="tag">Web Development</span>
+          </div>
+          <div class="card-meta">
+            <div class="avatar teal">SA</div>
+            <span>Sara Ahmed</span>
+            <span>·</span>
+            <span>Karachi</span>
+            <span>·</span>
+            <span>2 hrs ago</span>
+          </div>
+        </article>
+
+        <article class="request-card fade-in">
+          <span class="tag">High</span>
+          <h3>Figma component library review — auto-layout help</h3>
+          <p>Looking for a mentor to review my component structure. Specifically struggling with responsive auto-layout and variant properties before client handoff.</p>
+          <div class="tag-row">
+            <span class="tag">Figma</span>
+            <span class="tag">UI Design</span>
+            <span class="tag">Design</span>
+          </div>
+          <div class="card-meta">
+            <div class="avatar">RK</div>
+            <span>Raza Khan</span>
+            <span>·</span>
+            <span>Remote</span>
+            <span>·</span>
+            <span>5 hrs ago</span>
+          </div>
+        </article>
+
+        <article class="request-card fade-in">
+          <span class="tag medium">Medium</span>
+          <h3>Career pivot advice — dev to product manager</h3>
+          <p>I have 3 years of frontend experience and want to transition into product management. Looking for a mentor who has made a similar move.</p>
+          <div class="tag-row">
+            <span class="tag">Career</span>
+            <span class="tag">Product</span>
+            <span class="tag">Mentorship</span>
+          </div>
+          <div class="card-meta">
+            <div class="avatar dark">NB</div>
+            <span>Nida Baig</span>
+            <span>·</span>
+            <span>Lahore</span>
+            <span>·</span>
+            <span>1 day ago</span>
+          </div>
+        </article>
+
+        <article class="request-card fade-in">
+          <span class="tag success">Solved</span>
+          <h3>Python data pipeline optimization — batch job too slow</h3>
+          <p>Reduced a 40-minute Pandas batch job to under 4 minutes with community help. Posting the solution for others to learn from.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Academics</span>
+          </div>
+          <div class="card-meta">
+            <div class="avatar teal">AM</div>
+            <span>Ali Mirza</span>
+            <span>·</span>
+            <span>Remote</span>
+            <span>·</span>
+            <span>2 days ago</span>
+          </div>
+        </article>
+
+        <article class="request-card fade-in">
+          <span class="tag">High</span>
+          <h3>Git branching strategy for a team of 5 developers</h3>
+          <p>We're a small startup and our git workflow is chaotic. Need advice on a branching strategy — trunk-based vs gitflow for our team size.</p>
+          <div class="tag-row">
+            <span class="tag">Git/GitHub</span>
+            <span class="tag">Web Development</span>
+            <span class="tag">Community</span>
+          </div>
+          <div class="card-meta">
+            <div class="avatar">ZH</div>
+            <span>Zara Hussain</span>
+            <span>·</span>
+            <span>Islamabad</span>
+            <span>·</span>
+            <span>3 days ago</span>
+          </div>
+        </article>
+
+        <article class="request-card fade-in">
+          <span class="tag medium">Medium</span>
+          <h3>Content strategy for a student-run tech newsletter</h3>
+          <p>Running a weekly newsletter for 300+ subscribers. Looking for guidance on content planning, consistency, and growing the audience organically.</p>
+          <div class="tag-row">
+            <span class="tag">Content</span>
+            <span class="tag">Community</span>
+            <span class="tag">Growth</span>
+          </div>
+          <div class="card-meta">
+            <div class="avatar dark">FA</div>
+            <span>Fatima Arif</span>
+            <span>·</span>
+            <span>Karachi</span>
+            <span>·</span>
+            <span>4 days ago</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      HelpHub AI is built as a premium-feel, multi-page community support product using HTML, CSS, JavaScript, and LocalStorage.
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

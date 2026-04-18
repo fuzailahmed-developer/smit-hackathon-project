@@ -1,28 +1,35 @@
 :root {
-  --primary-color: #6366F1;
-  --primary-hover: #4F46E5;
-  --secondary-color: #22C55E;
-  --bg-gradient: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 50%, #DBEAFE 100%);
-  --text-main: #111827;
-  --text-muted: #6B7280;
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.4);
-  --form-bg: #ffffff;
-  --input-bg: #F9FAFB;
-  --input-border: #E5E7EB;
-  --social-btn-bg: #ffffff;
+  --primary-color: #0f766e;
+  --primary-hover: #115e59;
+  --secondary-color: #15803d;
+  --bg-gradient: radial-gradient(circle at top left, rgba(16, 185, 129, 0.12), transparent 30%),
+                 radial-gradient(circle at top right, rgba(245, 158, 11, 0.16), transparent 28%),
+                 linear-gradient(180deg, #f7f0e6 0%, #f4efe6 52%, #efe7da 100%);
+  --text-main: #1a1f1d;
+  --text-muted: #5f685f;
+  --glass-bg: rgba(255, 250, 243, 0.88);
+  --glass-border: rgba(255, 255, 255, 0.58);
+  --form-bg: #fffaf3;
+  --input-bg: rgba(255, 255, 255, 0.78);
+  --input-border: rgba(17, 33, 29, 0.1);
+  --social-btn-bg: rgba(255, 255, 255, 0.65);
   --card-radius: 24px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark {
-  --bg-gradient: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #1e1b4b 100%);
-  --text-main: #F9FAFB;
-  --text-muted: #9CA3AF;
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --form-bg: #111827;
-  --input-bg: #1F2937;
-  --input-border: #374151;
-  --social-btn-bg: #1F2937;
+  --primary-color: #14b8a6;
+  --primary-hover: #0f766e;
+  --secondary-color: #f59e0b;
+  --bg-gradient: radial-gradient(circle at top left, rgba(16, 185, 129, 0.08), transparent 30%),
+                 radial-gradient(circle at top right, rgba(245, 158, 11, 0.10), transparent 28%),
+                 linear-gradient(180deg, #111e1c 0%, #0e1a18 52%, #0a1412 100%);
+  --text-main: #f4efe6;
+  --text-muted: rgba(255, 255, 255, 0.55);
+  --glass-bg: rgba(23, 52, 48, 0.88);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --form-bg: #1d2d2a;
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --social-btn-bg: rgba(255, 255, 255, 0.07);
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpHub AI | AI Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <script defer src="./assets/js/ai-center.js"></script>
+  <link rel="stylesheet" href="./assets/css/ai-center.css">
+</head>
+
+<body data-page="ai">
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="brand-badge">H</span>
+        <span>HelpHub AI</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/home.html">Home</a>
+        <a href="/explore.html">Explore</a>
+        <a data-nav="leaderboard" href="/leaderboard.html">Leaderboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="panel">
+        <p class="eyebrow">AI Center</p>
+        <h1 style="font-size: clamp(2.2rem, 4vw, 4rem);">See what the platform intelligence is noticing.</h1>
+        <p>AI-like insights summarize demand trends, helper readiness, urgency signals, and request recommendations.</p>
+      </div>
+    </section>
+
+    <section class="stack section">
+      <div class="mini-grid" data-ai-summary></div>
+      <div class="panel">
+        <p class="section-kicker">AI recommendations</p>
+        <h2>Requests needing attention</h2>
+        <div class="stack" data-ai-recommendations></div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
