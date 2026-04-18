@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #6366F1;
+  --primary-hover: #4F46E5;
+  --secondary-color: #22C55E;
+  --bg-gradient: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 50%, #DBEAFE 100%);
+  --text-main: #111827;
+  --text-muted: #6B7280;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --form-bg: #ffffff;
+  --input-bg: #F9FAFB;
+  --input-border: #E5E7EB;
+  --social-btn-bg: #ffffff;
+  --card-radius: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark {
+  --bg-gradient: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #1e1b4b 100%);
+  --text-main: #F9FAFB;
+  --text-muted: #9CA3AF;
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --form-bg: #111827;
+  --input-bg: #1F2937;
+  --input-border: #374151;
+  --social-btn-bg: #1F2937;
+}
